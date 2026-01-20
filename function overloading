@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Complex{
+    int real, img;
+    public:
+    Complex(int r, int i){
+        this->real=r;
+        this->img=i;
+    }
+    void display(){
+        cout<<real<<" +i"<<img<<endl;
+    }
+
+};
+int main(){
+    Complex c1(3,4);
+    Complex c2(5,6);
+    c1.display();
+    c2.display();
+}
